@@ -227,7 +227,7 @@
     <div class="container">
       <h2 class="title is-3">Generating MEAD sequences</h2>
       <h2 class="subtitle has-text-centered" style="text-align: right;">
-        Each column represents a temporal style. Notice the lip motion of different actors are in sync. Check out the next panel for a different emotional expression.
+        Each column represents a temporal style. Notice the lip motion of different actors are in sync. Check out the next panel for a different emotional expression.</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <video poster="" id="video1" autoplay controls muted loop height="50%">
@@ -269,7 +269,7 @@
     <div class="container">
       <h2 class="title is-3">Generating UTDMHAD sequences</h2>
       <h2 class="subtitle has-text-centered" style="text-align: right;">
-       Conditional video generation for UTD-MHAD sequences with our method, ImaGINator and StyleGAN-V(not conditional).
+       Conditional video generation for UTD-MHAD sequences with our method, ImaGINator and StyleGAN-V(not conditional).</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <video poster="" id="video1" autoplay controls muted loop height="50%">
@@ -277,6 +277,10 @@
             <source src="static/videos/UTDMHAD/utdmhad_C.webm"
             type="video/mp4">
           </video>
+          <div class="carousel-text">
+            <h3>Our conditional generation</h3>
+            <p>We generate videos with actor-action combination not present in the training set.</p>
+          </div>
         </div>
         <div class="item item-video2">
           <video poster="" id="video2" autoplay controls muted loop height="50%">\
@@ -284,6 +288,10 @@
             <source src="static/videos/UTDMHAD/imagi.webm"
             type="video/mp4">
           </video>
+          <div class="carousel-text">
+            <h3>ImaGINator's conditional generation</h3>
+            <p>We generate videos with actor-action combination not present in the training set. Skeletal data has been overlayed as well.</p>
+          </div>
         </div>
         <div class="item item-video3">
           <video poster="" id="video3" autoplay controls muted loop height="50%">\
@@ -291,6 +299,10 @@
             <source src="static/videos/UTDMHAD/sgv.webm"
             type="video/mp4">
           </video>
+          <div class="carousel-text">
+            <h3>StyleGAN-V generaetd videos</h3>
+            <p>The videos are unconditionally generated.</p>
+          </div>
         </div>
       </div>
     </div>
