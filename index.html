@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
+  <title>Anonymous Submission</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -52,21 +52,17 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">Anonymous Submission</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Anonymous</a>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Anonymous</a>,</span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
                     <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -148,7 +144,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+           In this paper, we propose an enhanced architecture based on StyleGAN2 for conditional video generation. We leverage disentangled motion and content spaces for video manipulation. Our method learns dynamic representations of various actions that are independent of image content and can be transferred between different actors. Beyond the significant enhancement of video quality compared to prevalent methods, our approach allows us to generate videos of actors performing actions that were not seen together during the training stage. Furthermore, we demonstrate that the disentangled dynamic and content permit their independent manipulation, which holds potential for a wide range of applications such as changing a person's mood over time.
           </p>
         </div>
       </div>
@@ -310,6 +306,11 @@
         <source src="static/videos/invert/sec5.5.webm"
         type="video/mp4">
       </video></br>
+       <h2 class="subtitle has-text-justified" style="text-align: left;">
+       Upon inspection of PCA components of the trajectory recovered by the iterative inversion, the wave-like structures are evident. The motion style recovered by our GAN-inversion also has this character as show in the bottom row.</h2>
+      <img src="static/images/PCA.png" alt="PCA waves" width="600" ></br>
+      <h2 class="subtitle has-text-justified" style="text-align: left;">
+       The motion styles recovered by our GAN-inversion are transferrable to other actors. This is not possible with the traditional iterative inversion. The video below shows the possibility where we extract the motion from real videos and create new videos with different actors.</h2>
        <video poster="" id="tree" autoplay controls muted loop height="100%" style="display: block; margin: 0 auto;">
         <!-- Your video here -->
         <source src="static/videos/invert/ganinvert.webm"
