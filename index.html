@@ -8,7 +8,7 @@
   <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
   <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
   <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listeda below. Optimal dimenssions are 1200X630-->
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <meta property="og:image" content="static/image/your_banner_image.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
@@ -219,36 +219,63 @@
 <!-- End video carousel -->
   
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3" style="text-align: center;">Ablation of D_t</h2>
+  <div class="container">
+      <h2 class="title is-4">Generating UTD-MHAD sequences</h2>
       <h2 class="subtitle has-text-justified" style="text-align: left;">
-        Below we present few sequences where using D_t or not really matters.</h2>
+        </h2>
+      <div id="results-carousel" class="carousel results-carousel">
+      <div class="item">
         <!--video here -->
-        <div class="columns is-centered has-text-centered">
-        
-        <div class="column is-four-fifths">
-          
-          <video poster="" id="video1" autoplay controls muted loop height="50%">
+        <video poster="" id="video2" autoplay controls muted loop height="50%">\
             <!-- Your video file here -->
-            <source src="static/videos/circtri.webm"
+            <source src="static/videos/UTDMHAD/imagi.webm"
             type="video/mp4">
           </video>
-        </div>
-      </div>
-        <h2 class="subtitle has-text-centered">
-          <b>Top Row</b>: Real sequences where the actress makes circle, counter circle and triangle gesture.
-          <b>Mid Row</b>: Corresponding generated sequences without D_t.
-          <b>Bottom Row</b>: Corresponding generated sequences with D_t, where the gestures are faithfully generated.
+         <h2 class="subtitle has-text-centered">
+          <b>ImaGINator</b>'s conditionally generated videos.
         </h2>
+      </div>
+      <div class="item">
+        <!--video here -->
+        <video poster="" id="video2" autoplay controls muted loop height="50%">\
+            <!-- Your video file here -->
+            <source src="static/videos/UTDMHAD/sgv.webm"
+            type="video/mp4">
+          </video>
+        <h2 class="subtitle has-text-centered">
+         <b>StyleGAN-V</b>'s unconditionally generated videos.
+       </h2>
+     </div>
   </div>
 </div>
 </div>
 </section>
 <!-- End image carousel -->
 
+                                              
+                                              <!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3" style="text-align: center;">Ablation on discriminators</h2>
+      <h2 class="subtitle has-text-justified" style="text-align: left;">
+        Below we present few sequences where using D_t or not really matters.</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!--video here -->
+        <video poster="" id="video2" autoplay controls muted loop height="50%">\
+            <!-- Your video file here -->
+            <source src="static/videos/UTDMHAD/circtri.webm"
+            type="video/mp4">
+          </video>
+        <h2 class="subtitle has-text-centered">
+          <b>Top Row</b>Real sequences where the actress makes circle, counter circle and triangle gesture.
+          <b>Mid Row</b>Corresponding generated sequences without D_t.
+          <b>Bottom Row</b>Corresponding generated sequences with D_t, where the gestures are faithfully generated.
+        </h2>
+      </div>
+                                              
+                                              
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
